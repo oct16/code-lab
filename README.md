@@ -8,3 +8,5 @@ Implements:
 -   [bind](/call-apply-bind/bind.js)
 -   [debounce](/debounce-throttle/debounce.js)
 -   [throttle](/debounce-throttle/throttle.js)
+-   [map](/iterator/map.js)
+-   [filter](/iterator/filter.js)
