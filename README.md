@@ -10,3 +10,5 @@ Implements:
 -   [throttle](/debounce-throttle/throttle.js)
 -   [map](/iterator/map.js)
 -   [filter](/iterator/filter.js)
+-   [clone](/clone/deep.js)
+-   [curry](/curry/curry.js)
