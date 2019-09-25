@@ -1,0 +1,22 @@
+{
+  "name": "base-function-implement",
+  "version": "1.0.0",
+  "description": "Implements:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oct16/base-function-implement.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oct16/base-function-implement/issues"
+  },
+  "homepage": "https://github.com/oct16/base-function-implement#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  }
+}
