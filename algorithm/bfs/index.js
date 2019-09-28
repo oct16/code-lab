@@ -3,7 +3,6 @@
  *
  */
 function BFS(node) {
-    
+    return
 }
-
-
+ 
