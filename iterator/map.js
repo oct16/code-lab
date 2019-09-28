@@ -1,7 +1,6 @@
 Array.prototype.myMap = function(callback) {
     return this.reduce(function(pre, cur, index, array) {
-        pre.push(callback(cur, index, array))
-        return pre
+        return pre.concat(callback(cur, index, array))
     }, [])
 }
 
