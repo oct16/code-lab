@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/oct16/base-function-implement#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.7.7",
     "eslint": "^6.4.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "babel-core": "^6.26.3"
   }
 }
