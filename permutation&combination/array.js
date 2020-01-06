@@ -27,3 +27,23 @@ console.log(permutation([1, 2, 3]));
 //     [ 3, 1, 2 ],
 //     [ 3, 2, 1 ]
 // ]
+
+// 返回数组为size的所有的排列组合
+
+function groupSplit(arr, size) {
+    const result = [];
+
+    function group(tempArr, remainArr, n) {
+        if (n === 0) {
+            return result.push(tempArr);
+        }
+        for (let i = 0; i <= remainArr.length - n; i++) {
+            const remain = remainArr.slice(i);
+            const cur = [...tempArr, ...remain.splice(0, 1)];
+            group(cur, remain, n - 1);
+        }
+    }
+    group([], arr, size);
+    return result;
+}
+console.log(groupSplit([1, 2, 3, 4, 5], 3));
