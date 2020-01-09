@@ -1,6 +1,8 @@
 // 排列公式
 // p(nm) = n(n-1)(n-2) ... (n-m+1) = n! / (n-m)!
 
+// 以下属于全排列组合 (All Permutations of Javascript)
+
 function permuteStr(str) {
     function perm(str) {
         if (str.length == 1) {
@@ -29,3 +31,19 @@ function permuteStr(str) {
 }
 
 console.log(permuteStr("1234"));
+
+function permuteStr2(string) {
+    return string.length == 1
+        ? [string]
+        : string
+              .split("")
+              .map((e, i) =>
+                  permuteStr2(string.slice(0, i) + string.slice(i + 1)).map(
+                      e2 => e + e2
+                  )
+              )
+              .reduce((r, e) => r.concat(e))
+              .sort()
+              .filter((e, i, a) => i == 0 || a[i - 1] != e);
+}
+
